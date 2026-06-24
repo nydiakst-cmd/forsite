@@ -1,0 +1,40 @@
+.box{
+    background-color: aqua;
+    padding: 50px;
+    margin: 50px;
+    width: 200px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 30px;
+    text-align: center;
+    transition: transform 0.5s;
+}
+.box:hover{
+    transform: translateX(50px) rotate(90deg);
+}
+.box-animation{
+    background-color: brown;
+    padding: 50px;
+    margin: 50px;
+    text-align: center;
+    width: 200px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 30px;
+    animation: animak 2s infinite;
+}
+@keyframes animak{
+    0%{
+        transform: translateX(0px)rotate(0deg);
+    }
+    50%{
+        transform: translateX(0px) rotate(180deg);
+    }
+    100%{
+        transform: translateX(0px) rotate(360deg);
+    }
+}
+@media(max-width :600px){
+    nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+}
